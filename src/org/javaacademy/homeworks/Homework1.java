@@ -137,6 +137,7 @@ public class Homework1 {
 
     /** Расчет налоговой ставки */
     public static BigDecimal taxCount(long allProfit){
+        System.out.println("allprofit " + allProfit);
         BigDecimal firstPartTax;
         BigDecimal secondPartTax;
         BigDecimal thirdPartTax;
@@ -146,6 +147,7 @@ public class Homework1 {
         }
         else {
             firstPartTax = BigDecimal.valueOf((allProfit * 0.08));
+            allProfit = 0;
         }
 
         if(allProfit >= 1000000){
@@ -154,6 +156,7 @@ public class Homework1 {
         }
         else {
             secondPartTax = BigDecimal.valueOf((allProfit * 0.10));
+            allProfit = 0;
         }
 
         if (allProfit > 0){
