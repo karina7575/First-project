@@ -101,12 +101,12 @@ public class Homework1 {
         long hamIncome = costOfHam * madeHam;                       //доход от ветчины
         long porkIncome = costOfPork * madePork;                    //доход от шейки
 
-        long sausageExpenditure = primeCostSausage * madeSausage + 1000000; //расход от производства колбасы
-        long hamExpenditure = primeCostHam * madeHam + 1000000;             //расход от производства ветчины
-        long parkExpenditure = primeCostPork * madePork + 1000000;          //расход от производства шейки
+        long sausageExpenditure = primeCostSausage * madeSausage; //расход от производства колбасы
+        long hamExpenditure = primeCostHam * madeHam;             //расход от производства ветчины
+        long parkExpenditure = primeCostPork * madePork;          //расход от производства шейки
 
         long allProfit = (sausageIncome + hamIncome + porkIncome)      //прибыль до вычета налогов
-                - (sausageExpenditure + hamExpenditure + parkExpenditure);
+                - (sausageExpenditure + hamExpenditure + parkExpenditure + 1000000);
         BigDecimal allProfitNew = new BigDecimal(allProfit);
         BigDecimal tax = taxCount(allProfit);                            //налог
         BigDecimal profit = allProfitNew.subtract(tax);                  //прибыль после вычета налогов
