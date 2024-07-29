@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class Homework1 {
     public static void main(String[] args) {
-        ex1();
-        System.out.println("___________________________________________");
+        //ex1();
+        //System.out.println("___________________________________________");
         ex2();
         System.out.println("___________________________________________");
         ex3();
@@ -113,7 +113,9 @@ public class Homework1 {
         System.out.println(profit);
     }
 
-    /** Расчет себестоимости при производстве колбасы */
+    /**
+     * Расчет себестоимости при производстве колбасы
+     */
     public static int primeCostSausageCount(int madeSausage){
         if(madeSausage < 1000){
             return 412;
@@ -125,7 +127,9 @@ public class Homework1 {
             return 404;
         }
     }
-    /** Расчет себестоимости при производстве шейки */
+    /**
+     * Расчет себестоимости при производстве шейки
+     */
     public static int primeCostPorkCount(int madePork){
         if(madePork < 500){
             return 311;
@@ -135,7 +139,9 @@ public class Homework1 {
         }
     }
 
-    /** Расчет налоговой ставки */
+    /**
+     * Расчет налоговой ставки
+     */
     public static BigDecimal taxCount(long allProfit){
         System.out.println("allprofit " + allProfit);
         BigDecimal firstPartTax;
