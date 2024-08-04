@@ -1,4 +1,4 @@
-package org.javaacademy.homeworks;
+package org.javaacademy.homeworks.homework1;
 
 import java.math.BigDecimal;
 import java.util.Scanner;
