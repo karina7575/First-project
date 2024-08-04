@@ -3,10 +3,10 @@ import java.util.Random;
 
 public class Homework2 {
     public static void main(String[] args) {
-        ex1();
-        ex2();
-        //ex3();
-        ex5();
+        //ex1();
+        //ex2();
+        ex3();
+        //ex5();
     }
 
     public static void ex1() {
@@ -52,13 +52,14 @@ public class Homework2 {
         }
 
         public static void ex3() {
-            //Дан распределитель случайных чисел
             Random random = new Random(1);
-            //Получение случайного числа
-            int number = random.nextInt(1000);
-
-            //Написать код, генерирующий случайные числа до тех пор, пока не сгенерируется 999.
-            //Вывести номер попытки, с которой получилось получить случайным образом число 999.
+            int number, tries = 0;
+            do {
+                number = random.nextInt(1000);
+                tries++;
+            }
+            while (number != 999);
+            System.out.println("число " + number + " сгенерировалось за " + tries + " попыток");
         }
 
         public static void ex4() {
