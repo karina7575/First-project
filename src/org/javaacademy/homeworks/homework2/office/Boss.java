@@ -11,7 +11,7 @@ public class Boss {
         return name;
     }
 
-    public void pushTheManager (Manager manager) {
-        System.out.println(manager.getName() + " быстрее!");
+    public void pushTheManager(Manager manager) {
+        System.out.println(manager.getName() + ", быстрее!");
     }
 }

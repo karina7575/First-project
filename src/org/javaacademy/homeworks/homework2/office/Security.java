@@ -11,7 +11,7 @@ public class Security {
         return name;
     }
 
-    public void askForSalary (Boss boss) {
+    public void askForSalary(Boss boss) {
         System.out.println(boss.getName() + ", дайте аванс! Очень надо!");
     }
 }

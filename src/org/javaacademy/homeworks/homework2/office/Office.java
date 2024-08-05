@@ -13,7 +13,7 @@ public class Office {
         this.security = security;
     }
 
-    public void workDay () {
+    public void workDay() {
         boss.pushTheManager(manager);
         manager.panic();
         security.askForSalary(boss);

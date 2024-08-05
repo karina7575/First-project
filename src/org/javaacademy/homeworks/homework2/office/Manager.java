@@ -10,7 +10,8 @@ public class Manager {
     public String getName() {
         return name;
     }
-    public void panic () {
+
+    public void panic() {
         System.out.println("Я ничего не успеваю, помогите!");
     }
 }
