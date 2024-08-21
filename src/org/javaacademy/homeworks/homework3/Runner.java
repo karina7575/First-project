@@ -5,15 +5,14 @@ import org.javaacademy.homeworks.homework3.PhoneFactory.IphoneFactory;
 import org.javaacademy.homeworks.homework3.PhoneFactory.Samsung;
 import org.javaacademy.homeworks.homework3.PhoneFactory.SamsungFactory;
 import org.javaacademy.homeworks.homework3.pyramids.Pyramid1;
-import org.javaacademy.homeworks.immutablecity.City;
-import org.javaacademy.homeworks.immutablecity.House;
+import org.javaacademy.homeworks.homework3.immutable_city.City;
+import org.javaacademy.homeworks.homework3.immutable_city.House;
 
 public class Runner {
     public static void main(String[] args) {
         ex2();
         ex3();
         ex4();
-
     }
 
     public static void ex1() {

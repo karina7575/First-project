@@ -1,4 +1,4 @@
-package org.javaacademy.homeworks.immutablecity;
+package org.javaacademy.homeworks.homework3.immutable_city;
 
 import java.util.Arrays;
 
